@@ -1,0 +1,9 @@
+/* implementing and using primitive and not logic */
+
+CHIP Nand {
+	IN a,b;
+	OUT z;
+PARTS:
+	And (a=a,b=b,out=y);
+	Not (in=y, out=z);
+}
